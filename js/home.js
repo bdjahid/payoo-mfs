@@ -32,3 +32,17 @@ document
       alert("failed your add amount please valid pin");
     }
   });
+
+//   btn-show-add-money
+
+document
+  .getElementById("btn-show-add-money")
+  .addEventListener("click", function () {
+    console.log("btn-show-add-money");
+
+    //   btn-show-add-money clicked
+    document.getElementById("add-money-form").classList.remove("hidden");
+
+    //   btn-hide-cash-out clicked
+    document.getElementById("cash-out-money-form").classList.add("hidden");
+  });
