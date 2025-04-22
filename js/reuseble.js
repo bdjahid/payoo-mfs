@@ -8,3 +8,14 @@ function getTextById(id) {
   const textNumber = parseFloat(inputText);
   return textNumber;
 }
+
+function showSectionById(id) {
+  // hide section
+  document.getElementById("addMoney").classList.add("hidden");
+  document.getElementById("cashOut").classList.add("hidden");
+  document.getElementById("transactions").classList.add("hidden");
+
+  //show section
+
+  document.getElementById(id).classList.remove("hidden");
+}

@@ -33,10 +33,16 @@
               <button id="btn-show-cash-out" class="btn btn-lg">
                 Cash Out
               </button>
+              <button id="btn-show-transactions" class="btn btn-lg">
+                Transactions
+              </button>
             </div>
             <div class="divider"></div>
             <!-- add amount -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div
+              id="addMoney"
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
               <form action="">
                 <div class="card-body">
                   <fieldset class="fieldset">
@@ -64,7 +70,10 @@
             </div>
 
             <!-- cash out -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div
+              id="cashOut"
+              class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
               <form action="">
                 <div class="card-body">
                   <fieldset class="fieldset">
@@ -90,6 +99,15 @@
                 </div>
               </form>
             </div>
+            <!-- transactions -->
+            <div>
+              <div>
+                <div id="transactions" class="text-3xl text-center hidden">
+                  <h2>Transactions History</h2>
+                  <div id="transaction-container"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -98,5 +116,6 @@
     <script src="js/castOut.js"></script> -->
     <script src="js/reuseble.js"></script>
     <script src="js/reuseble2.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>
